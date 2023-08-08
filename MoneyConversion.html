@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+	<meta charset="UTF-8">
+	<title>Money Conversion</title>
+</head>
+<style>
+	td {
+		margin: 20px;
+	}
+</style>
+<body>
+<table>
+	<tr>
+		<th>Amount</th>
+		<th>From Currency</th>
+		<th>To Currency</th>
+	</tr>
+	<tr>
+		<td><input type="Number" id="addMoney"></td>
+		<td>
+			<select id="From">
+				<option>USD</option>
+				<option>VND</option>
+			</select>
+		</td>
+		<td>
+			<select id="To">
+				<option>VND</option>
+				<option>USD</option>
+			</select>
+		</td>
+		<td>
+			<button onclick="ChangeMoney()">Convert</button>
+		</td>
+	</tr>
+</table>
+<br>
+<script src="tiente.js"></script>
+<p id="Result">Result:</p>
+</body>
+</html>
